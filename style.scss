@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END CSS RESET*/
+
+/*GLOBALS*/
+* {
+    box-sizing: border-box;
+}
+
+h1{font-size: 35px;}
+h2{font-size: 30px;}
+h3{font-size: 25px;}
+
+.mrg-bot{margin-bottom: 50px;}
+
+/*GLOBALS - btn*/
+.btn{
+	border: 1px solid #391356;
+	border-radius: 20px;
+	color: #391356;
+
+	&:hover{
+		border: 1px solid #391356;
+		background-color: #9476AB;
+		border-radius: 20px;
+		color: #391356;
+	}
+}
+
+/*HEADER*/
+header{
+	nav{
+		/*text-align: right;*/
+
+		.navbar-nav li{
+			/*display: inline-block;*/
+			/*float: none;*/
+		}
+	}
+}/*end - header*/
+
+/*MAIN*/
+
+/*MAIN - index page*/
+main{
+	.hero{
+		background-color: #d2d2d2;
+		height: 450px;
+
+		h2{
+			font-size: 30px;
+			text-align: center;
+		}
+	}/*end - hero*/
+	
+	.info{
+		text-align: center;
+
+		h3, p{margin-bottom: 15px;}
+	}
+
+	.why-me{
+		background-color: #d2d2d2;
+
+		h2, p{margin-bottom: 40px;}
+		h2{margin-top: 30px;}
+	}
+}/*end - main*/
+
+/*Main - page 2*/
+.page-2{
+	.box{
+		text-align: center;
+		border: 1px solid red;
+
+
+		h3, ul, a{margin-bottom: 20px;}
+	}
+}
+/*end - MAIN page 2*/
+
+footer{
+	background-color: black;
+	height: 250px;
+	
+	h1{color: white;}
+}
+
+
+
+
+/*info divs are displayed as a block on <768px res
+  so we add some space between them*/
+@media (max-width: 767px){
+  	.info div{
+  		margin-bottom: 50px;
+	}
+}
